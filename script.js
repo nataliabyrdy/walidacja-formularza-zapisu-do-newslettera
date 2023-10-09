@@ -1,6 +1,6 @@
 console.log("walidacja formularza");
 
-let newsletterForm = document.getElementById('name');
+let newsletterForm = document.getElementById('newsletter-form');
 let allAgreeChx = document.getElementById('all-agree');
 
 const validate = (event) => {
@@ -12,7 +12,7 @@ const validate = (event) => {
 
     errors.innerHTML = '';
 
-    if (txtName.ariaValueMax.trim() === '') {
+    if (txtName.value.trim() === '') {
         let liError = document.createElement('li');
         liError.innerText = "Wypisz Imie i nazwisko";
         errors.appendChild(liError);
